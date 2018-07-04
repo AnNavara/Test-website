@@ -86,7 +86,7 @@ lazyRequireTask('clean', './tasks/clean', {
 
 gulp.task('watch', function() {
   gulp.watch(['source/**/*.pug', 'source/locals.js'], gulp.series('html'));
-  gulp.watch('source/styles/**/*.scss', gulp.series('styles'));
+  gulp.watch('source/**/*.scss', gulp.series('styles'));
   gulp.watch('source/_img/*.{jpg,png}', gulp.series('assets:img'));
   gulp.watch('source/_img/*.svg', gulp.series('assets:svg', 'styles'));
   gulp.watch('source/_js/*.js', gulp.series('js:main'));

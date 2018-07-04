@@ -1,0 +1,126 @@
+.col-1 {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 8.33%; }
+
+.col-2 {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 16.66%; }
+
+.col-3 {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 24.99%; }
+
+.col-4 {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 33.32%; }
+
+.col-5 {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 41.65%; }
+
+.col-6 {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 49.98%; }
+
+.col-7 {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 58.31%; }
+
+.col-8 {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 66.64%; }
+
+.col-9 {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 74.97%; }
+
+.col-10 {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 83.3%; }
+
+.col-11 {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 91.63%; }
+
+.col-12 {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 99.96%; }
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1140px;
+  max-width: size("content-width");
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.logo {
+  margin-right: auto; }
+  .logo a {
+    font-family: MuseoSansCyrl;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: 2.4px;
+    text-align: left;
+    color: #e4002b;
+    text-decoration: none; }
+
+.address {
+  margin-right: 35px;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  text-align: left;
+  color: #141414;
+  font-style: normal; }
+
+.phone-number {
+  margin-right: 40px;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  text-align: left;
+  color: #141414; }
+
+.btn {
+  padding: 0;
+  position: relative;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  text-align: left;
+  color: #f5112c;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none; }
+  .btn:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #fa8895; }

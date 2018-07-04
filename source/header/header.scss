@@ -1,1 +1,66 @@
+.header {
+  @include container;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
+.logo {
+  margin-right: auto;
+
+  a {
+    font-family: MuseoSansCyrl;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: 2.4px;
+    text-align: left;
+    color: #e4002b;
+    text-decoration: none;
+  }
+}
+
+@mixin info-text {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  text-align: left;
+  color: #141414;
+}
+
+.address {
+  margin-right: 35px;
+  @include info-text;
+  font-style: normal;
+}
+
+.phone-number {
+  margin-right: 40px;
+  @include info-text;
+}
+
+.btn {
+  padding: 0;
+  position: relative;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  text-align: left;
+  color: #f5112c;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #fa8895;
+  }
+}
