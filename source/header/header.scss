@@ -1,5 +1,6 @@
 .header {
   @include container;
+  padding: 28px 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -9,44 +10,50 @@
   margin-right: auto;
 
   a {
-    font-family: MuseoSansCyrl;
+    font-family: "Museo Sans Cyrl 900";
     font-size: 48px;
     font-weight: 900;
-    line-height: 1.4;
-    letter-spacing: 2.4px;
+    line-height: 1;
     text-align: left;
+    letter-spacing: 0.05em;
     color: #e4002b;
     text-decoration: none;
+
+    span {
+      color: #000;
+    }
   }
 }
 
 @mixin info-text {
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-size: 18px;
   font-weight: 300;
   line-height: 1.33;
+  letter-spacing: 0.05em;
   text-align: left;
   color: #141414;
 }
 
 .address {
-  margin-right: 35px;
+  margin-right: 32px;
   @include info-text;
   font-style: normal;
 }
 
 .phone-number {
-  margin-right: 40px;
+  margin-right: 42px;
   @include info-text;
 }
 
 .btn {
   padding: 0;
   position: relative;
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-size: 18px;
   font-weight: 300;
   line-height: 1.33;
+  letter-spacing: 0.05em;
   text-align: left;
   color: #f5112c;
   border: none;

@@ -1,0 +1,78 @@
+.banner {
+  padding-top: 192px;
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: 10px 0;
+}
+
+.banner-container {
+  @include container;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.promo {
+  width: 45.5%;
+
+  &-header {
+    display: block;
+    margin-bottom: 6px;
+    font-family: "Gilroy";
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    display: block;
+    margin-bottom: 95px;
+    width: 400px;
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.33;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #141414;
+  }
+
+  h2 {
+    position: relative;
+    margin: 0 0 53px 0;
+    font-size: 45px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -32px;
+      left: 0;
+      width: 64px;
+      height: 7px;
+      background-color: #f5112c;
+    }
+  }
+
+  span {
+
+  }
+}
+
+.promo-btn {
+  display: inline-block;
+  padding: 25px 35px;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #f5112c;
+  border: none;
+  border-radius: 35px;
+  outline: none;
+  cursor: pointer;
+}
