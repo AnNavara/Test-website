@@ -1,0 +1,113 @@
+.features {
+  padding-top: 162px;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    @include container;
+  }
+
+  h2 {
+    position: relative;
+    margin: 0;
+    width: 400px;
+    font-family: "Gilroy";
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    color: var(--black);
+    text-transform: uppercase;
+
+    .styled {
+      position: absolute;
+      top: -104px;
+      right: -50px;
+      font-family: "Gilroy";
+      font-size: 300px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: rgba(0, 0, 0, 0.09);
+    }
+  }
+}
+
+.trouble {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  li {
+    position: relative;
+    margin-bottom: 85px;
+    padding-left: 392px;
+    display: flex;
+    counter-increment: item;
+
+    &:nth-child(even) {
+      padding-left: 0;
+
+      &::before {
+        top: 26px;
+        left: 400px;
+      }
+
+      &::after {
+        top: 25px;
+        left: 460px;
+      }
+
+      img {
+        margin-right: 45px;
+      }
+
+      p {
+        margin-top: 88px;
+      }
+    }
+
+    img {
+    }
+
+    &::before {
+      position: absolute;
+      content: "0"counter(item);
+      font-family: "Gilroy";
+      top: 50px;
+      right: 430px;
+      font-size: 48px;
+      font-weight: 800;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0.05em;
+    }
+
+    &::after {
+      position: absolute;
+      content: ".";
+      top: 51px;
+      right: 414px;
+      font-family: "Gilroy";
+      font-size: 48px;
+      font-weight: 800;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0.05em;
+      color: var(--pinkish-red);
+    }
+
+    p {
+      margin-right: 20px;
+      margin-top: 103px;
+      width: 400px;
+      font-family: "Gilroy";
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.56;
+      letter-spacing: 0.05em;
+      color: #1b1b1b;
+    }
+  }
+}

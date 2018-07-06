@@ -23,7 +23,7 @@ module.exports = (options) => () => {
         sort: true
       }),
       postcssFF,
-      autoprefixer({ browsers: ['> 2.5% in RU', 'last 2 version', 'ie 10', 'ios 6'], flexbox: 'no-2009'})
+      autoprefixer({ browsers: ['> 3% in RU', 'last 2 version', 'ie 11'], flexbox: 'no-2009'})
     ]),
     // $.csscomb(),
     // $.sourcemaps.write(),
