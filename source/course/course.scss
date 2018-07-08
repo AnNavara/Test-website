@@ -1,0 +1,77 @@
+.course {
+
+  h2 {
+    margin: 0 0 72px 0;
+    font-family: "Gilroy";
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__wrap {
+    @include container;
+    justify-content: flex-end;
+  }
+
+  ul {
+    padding: 0;
+    columns: 2;
+    column-gap: 3px;
+    list-style: none;
+
+    li {
+      margin-bottom: 28px;
+      margin-right: 50px;
+    }
+
+    h4 {
+      margin: 0 0 6px 0;
+      font-family: "Gilroy";
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.6;
+      letter-spacing: 0.05em;
+      color: #141414;
+      color: var(--black-gray);
+    }
+
+    p {
+      margin: 0;
+      font-family: "Gilroy";
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.6;
+      letter-spacing: 0.05em;
+      color: #141414;
+      color: var(--black-gray);
+    }
+  }
+}
+
+.price {
+  margin-bottom: 37px;
+
+  span {
+    display: block;
+    margin-bottom: 12px;
+    font-family: "Gilroy";
+    font-size: 45px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: #f5112c;
+    color: var(--pinkish-red);
+  }
+
+  p {
+    margin: 0;
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.56;
+    letter-spacing: 0.05em;
+    color: #141414;
+    color: var(--black-gray);
+  }
+}

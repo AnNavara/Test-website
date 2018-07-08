@@ -9,7 +9,8 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Sections
    ========================================================================== */
@@ -17,15 +18,17 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
+  margin: 0.67em 0; 
   font-size: 2em;
-  margin: 0.67em 0; }
+}
 
 /* Grouping content
    ========================================================================== */
@@ -34,13 +37,14 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
+  /* 1 */
+  height: 0;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   /* 1 */
-  height: 0;
-  /* 1 */
   overflow: visible;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -50,7 +54,8 @@ pre {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -58,27 +63,31 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 /**
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
   /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  -webkit-text-decoration: underline dotted;
+          text-decoration: underline;
           text-decoration: underline dotted;
-  /* 2 */ }
+  border-bottom: none;
+  /* 2 */
+
+  -webkit-text-decoration: underline dotted;
+  /* 2 */
+}
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -90,13 +99,15 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -104,16 +115,19 @@ small {
  */
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -121,7 +135,8 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 img {
-  border-style: none; }
+  border-style: none;
+}
 
 /* Forms
    ========================================================================== */
@@ -134,14 +149,15 @@ input,
 optgroup,
 select,
 textarea {
+  /* 1 */
+  margin: 0;
   font-family: inherit;
   /* 1 */
   font-size: 100%;
   /* 1 */
   line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Show the overflow in IE.
@@ -150,7 +166,8 @@ textarea {
 button,
 input {
   /* 1 */
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -159,7 +176,8 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
@@ -168,7 +186,8 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; }
+  -webkit-appearance: button;
+}
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -177,8 +196,9 @@ button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
+  padding: 0; 
   border-style: none;
-  padding: 0; }
+}
 
 /**
  * Restore the focus styles unset by the previous rule.
@@ -187,13 +207,15 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
+  outline: 1px dotted ButtonText;
+}
 
 /**
  * Correct the padding in Firefox.
  */
 fieldset {
-  padding: 0.35em 0.75em 0.625em; }
+  padding: 0.35em 0.75em 0.625em;
+}
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -202,31 +224,34 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  color: inherit;
   /* 2 */
   display: table;
   /* 1 */
   max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
+  /* 1 */
+  color: inherit;
   /* 3 */
   white-space: normal;
-  /* 1 */ }
+  /* 1 */
+}
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * 1. Add the correct box sizing in IE 10.
@@ -238,14 +263,16 @@ textarea {
           box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+  height: auto;
+}
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
@@ -255,13 +282,15 @@ textarea {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -271,7 +300,8 @@ textarea {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Interactive
    ========================================================================== */
@@ -279,13 +309,15 @@ textarea {
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
 details {
-  display: block; }
+  display: block;
+}
 
 /*
  * Add the correct display in all browsers.
  */
 summary {
-  display: list-item; }
+  display: list-item;
+}
 
 /* Misc
    ========================================================================== */
@@ -293,145 +325,172 @@ summary {
  * Add the correct display in IE 10+.
  */
 template {
-  display: none; }
+  display: none;
+}
 
 /**
  * Add the correct display in IE 10.
  */
 [hidden] {
-  display: none; }
+  display: none;
+}
 
 @font-face {
-  font-family: 'Museo Sans Cyrl 900';
+  font-family: "Museo Sans Cyrl 900";
+  font-style: normal; 
+  font-weight: bold;
+
   src: url("../fonts/MuseoSansCyrl-900.woff");
   src: local("MuseoSansCyrl-900"), url("../fonts/MuseoSansCyrl-900.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
+}
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
+  font-style: normal; 
+  font-weight: 800;
+
   src: url("Gilroy-ExtraBold.eot");
   src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("../fonts/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal; }
+}
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
+  font-style: normal; 
+  font-weight: 300;
+
   src: url("../fonts/Gilroy-Light.eot");
   src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
+}
 
 .col-1 {
+  width: 8.33%; 
   margin-right: 15px;
   margin-left: 15px;
-  width: 8.33%; }
+}
 
 .col-2 {
+  width: 16.66%; 
   margin-right: 15px;
   margin-left: 15px;
-  width: 16.66%; }
+}
 
 .col-3 {
+  width: 24.99%; 
   margin-right: 15px;
   margin-left: 15px;
-  width: 24.99%; }
+}
 
 .col-4 {
+  width: 33.32%; 
   margin-right: 15px;
   margin-left: 15px;
-  width: 33.32%; }
+}
 
 .col-5 {
+  width: 41.65%; 
   margin-right: 15px;
   margin-left: 15px;
-  width: 41.65%; }
+}
 
 .col-6 {
+  width: 49.98%; 
   margin-right: 15px;
   margin-left: 15px;
-  width: 49.98%; }
+}
 
 .col-7 {
+  width: 58.31%; 
   margin-right: 15px;
   margin-left: 15px;
-  width: 58.31%; }
+}
 
 .col-8 {
+  width: 66.64%; 
   margin-right: 15px;
   margin-left: 15px;
-  width: 66.64%; }
+}
 
 .col-9 {
+  width: 74.97%; 
   margin-right: 15px;
   margin-left: 15px;
-  width: 74.97%; }
+}
 
 .col-10 {
+  width: 83.3%; 
   margin-right: 15px;
   margin-left: 15px;
-  width: 83.3%; }
+}
 
 .col-11 {
+  width: 91.63%; 
   margin-right: 15px;
   margin-left: 15px;
-  width: 91.63%; }
+}
 
 .col-12 {
+  width: 99.96%; 
   margin-right: 15px;
   margin-left: 15px;
-  width: 99.96%; }
+}
 
 :root {
   --black-gray: #141414;
   --pinkish-red: #f5112c;
-  --black: #000000;
+  --black: #000;
   --vivid-blue: #2429ff;
   --grayish-white: #e9e9e9;
   --gray: #f5f5f5;
   --cherry-red: #e4002b;
   --black-gray2: #1b1b1b;
-  --whitish-gray: #f8f8f8; }
+  --whitish-gray: #f8f8f8;
+}
 
 .header {
-  margin-left: auto;
-  margin-right: auto;
   display: -ms-flexbox;
   display: flex;
+  display: flex;
   width: 100%;
-  max-width: 1140px;
+  max-width: 1170px;
   max-width: size("content-width");
   padding: 28px 0;
-  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   -ms-flex-pack: end;
-      justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 .logo {
-  margin-right: auto; }
-  .logo a {
-    font-family: "Museo Sans Cyrl 900";
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 1;
-    text-align: left;
-    letter-spacing: 0.05em;
-    color: #e4002b;
-    text-decoration: none; }
-    .logo a span {
-      color: #000; }
+  margin-right: auto;
+}
+.logo a {
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+  color: #e4002b;
+  text-align: left;
+  text-decoration: none; 
+  letter-spacing: 0.05em;
+}
+.logo a span {
+  color: #000;
+}
 
 .address {
   margin-right: 32px;
   font-family: "Gilroy";
   font-size: 18px;
+  font-style: normal; 
   font-weight: 300;
   line-height: 1.33;
-  letter-spacing: 0.05em;
-  text-align: left;
   color: #141414;
-  font-style: normal; }
+  text-align: left;
+  letter-spacing: 0.05em;
+}
 
 .phone-number {
   margin-right: 42px;
@@ -439,87 +498,99 @@ template {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.33;
-  letter-spacing: 0.05em;
+  color: #141414;
   text-align: left;
-  color: #141414; }
+  text-decoration: none; 
+  letter-spacing: 0.05em;
+}
 
 .btn {
-  padding: 0;
   position: relative;
+  padding: 0;
   font-family: "Gilroy";
   font-size: 18px;
   font-weight: 300;
   line-height: 1.33;
-  letter-spacing: 0.05em;
-  text-align: left;
   color: #f5112c;
-  border: none;
-  background: transparent;
+  text-align: left;
+  letter-spacing: 0.05em;
   cursor: pointer;
-  outline: none; }
-  .btn:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0px;
-    left: 0;
-    background-color: #fa8895; }
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.btn:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: #fa8895;
+}
 
 .banner {
   padding-top: 192px;
   background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
-  background-position: 10px 0; }
+  background-position: 10px 0;
+}
 
 .banner-container {
-  margin-left: auto;
-  margin-right: auto;
   display: -ms-flexbox;
   display: flex;
+  display: flex;
   width: 100%;
-  max-width: 1140px;
+  max-width: 1170px;
   max-width: size("content-width");
   padding-bottom: 200px;
-  display: flex;
-  -ms-flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
       flex-direction: column;
+
+  -ms-flex-direction: column;
   -ms-flex-align: end;
-      align-items: flex-end; }
+  align-items: flex-end;
+}
 
 .promo {
-  width: 45.5%; }
-  .promo-header {
-    display: block;
-    margin-bottom: 6px;
-    font-family: "Gilroy";
-    font-size: 34px;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    color: #000000;
-    text-transform: uppercase; }
-  .promo-text {
-    display: block;
-    margin-bottom: 98px;
-    font-family: "Gilroy";
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.33;
-    letter-spacing: 0.05em;
-    text-align: left;
-    color: #141414; }
-  .promo h2 {
-    position: relative;
-    margin: 0 0 53px 0;
-    font-size: 45px; }
-    .promo h2::after {
-      position: absolute;
-      content: "";
-      bottom: -32px;
-      left: 0;
-      width: 64px;
-      height: 7px;
-      background-color: #f5112c; }
+  width: 45.5%;
+}
+.promo-header {
+  display: block;
+  margin-bottom: 6px;
+  font-family: "Gilroy";
+  font-size: 34px;
+  font-weight: 800;
+  color: #000;
+  text-transform: uppercase; 
+  letter-spacing: 0.05em;
+}
+.promo-text {
+  display: block;
+  margin-bottom: 98px;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  color: #141414; 
+  text-align: left;
+  letter-spacing: 0.05em;
+}
+.promo h2 {
+  position: relative;
+  margin: 0 0 53px 0;
+  font-size: 45px;
+}
+.promo h2::after {
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  width: 64px;
+  height: 7px;
+  content: "";
+  background-color: #f5112c;
+}
 
 .promo-btn {
   display: inline-block;
@@ -528,105 +599,357 @@ template {
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
+  color: #fff;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  cursor: pointer; 
   background-color: #f5112c;
   border: none;
   border-radius: 35px;
   outline: none;
-  cursor: pointer; }
+}
 
 .features {
-  padding-top: 162px; }
-  .features-wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    width: 100%;
-    max-width: 1140px;
-    max-width: size("content-width"); }
-  .features h2 {
-    position: relative;
-    margin: 0;
-    width: 400px;
-    font-family: "Gilroy";
-    font-size: 45px;
-    font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: 0.05em;
-    color: var(--black);
-    text-transform: uppercase; }
-    .features h2 .styled {
-      position: absolute;
-      top: -104px;
-      right: -50px;
-      font-family: "Gilroy";
-      font-size: 300px;
-      font-weight: 800;
-      letter-spacing: 0.05em;
-      color: rgba(0, 0, 0, 0.09); }
-
-.trouble {
-  margin: 0;
-  padding: 0;
+  padding-top: 162px;
+}
+.features-wrapper {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
+  display: flex;
+  width: 100%;
+  max-width: 1170px;
+  max-width: size("content-width"); 
+  margin-right: auto;
+  margin-left: auto;
       flex-direction: column;
-  list-style: none; }
-  .trouble li {
-    position: relative;
-    margin-bottom: 85px;
-    padding-left: 392px;
-    display: -ms-flexbox;
-    display: flex;
-    counter-increment: item; }
-    .trouble li:nth-child(even) {
-      padding-left: 0; }
-      .trouble li:nth-child(even)::before {
-        top: 26px;
-        left: 400px; }
-      .trouble li:nth-child(even)::after {
-        top: 25px;
-        left: 460px; }
-      .trouble li:nth-child(even) img {
-        margin-right: 45px; }
-      .trouble li:nth-child(even) p {
-        margin-top: 88px; }
-    .trouble li::before {
-      position: absolute;
-      content: "0" counter(item);
-      font-family: "Gilroy";
-      top: 50px;
-      right: 430px;
-      font-size: 48px;
-      font-weight: 800;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: 0.05em; }
-    .trouble li::after {
-      position: absolute;
-      content: ".";
-      top: 51px;
-      right: 414px;
-      font-family: "Gilroy";
-      font-size: 48px;
-      font-weight: 800;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: 0.05em;
-      color: var(--pinkish-red); }
-    .trouble li p {
-      margin-right: 20px;
-      margin-top: 103px;
-      width: 400px;
-      font-family: "Gilroy";
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 1.56;
-      letter-spacing: 0.05em;
-      color: #1b1b1b; }
+
+  -ms-flex-direction: column;
+}
+.features h2 {
+  position: relative;
+  margin: 0;
+  font-family: "Gilroy";
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--black);
+  text-transform: uppercase; 
+  letter-spacing: 0.05em;
+}
+.features h2 .styled {
+  position: absolute;
+  top: -104px;
+  left: 265px;
+  font-family: "Gilroy";
+  font-size: 300px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.09); 
+  letter-spacing: 0.05em;
+}
+
+.trouble {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0 0 380px 0;
+  list-style: none; 
+      flex-direction: column;
+
+  -ms-flex-direction: column;
+}
+.trouble li {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  counter-increment: item;
+
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.trouble li:nth-child(even) {
+  padding-left: 0;
+
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.trouble li:nth-child(even)::before {
+  top: 26px;
+  left: 400px;
+}
+.trouble li:nth-child(even)::after {
+  top: 25px;
+  left: 460px;
+}
+.trouble li:nth-child(even) p {
+  margin-top: 88px;
+}
+.trouble li:nth-child(1) {
+  margin-bottom: 81px;
+}
+.trouble li:nth-child(2) {
+  margin-bottom: 21px;
+}
+.trouble li:nth-child(3) {
+  margin-bottom: 40px;
+}
+.trouble li:nth-child(3) img {
+  margin-top: -85px;
+}
+.trouble li:nth-child(4) img {
+  margin-top: -43px;
+}
+.trouble li:last-child .trouble__img-wrap::before,
+    .trouble li:last-child .trouble__img-wrap::after {
+  display: none;
+}
+.trouble li:last-child .last-counter {
+  position: absolute;
+  top: 25px;
+  right: -190px;
+  font-family: "Gilroy";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.05em; 
+  content: "0" counter(item);
+}
+.trouble li p {
+  margin-top: 103px;
+  margin-right: 32px;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.56;
+  color: #1b1b1b; 
+  letter-spacing: 0.05em;
+}
+
+.trouble__img-wrap {
+  position: relative;
+}
+.trouble__img-wrap:nth-child(odd) {
+  margin-right: 45px;
+  margin-left: 0;
+}
+.trouble__img-wrap:nth-child(odd)::before {
+  top: 25px;
+  right: -30px; 
+  left: auto;
+}
+.trouble__img-wrap:nth-child(odd)::after {
+  top: 26px;
+  right: -44px; 
+  left: auto;
+}
+.trouble__img-wrap::before {
+  position: absolute;
+  top: 50px;
+  left: -30px;
+  font-family: "Gilroy";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.05em; 
+  content: "0" counter(item);
+}
+.trouble__img-wrap::after {
+  position: absolute;
+  top: 51px;
+  left: 25px;
+  font-family: "Gilroy";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--pinkish-red); 
+  letter-spacing: 0.05em;
+  content: ".";
+}
+
+.advantages {
+  margin-bottom: 200px;
+}
+.advantages h2 {
+  margin-bottom: 132px;
+}
+.advantages ul {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.advantages li {
+  padding-left: 26px;
+  margin-right: 28px;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.56;
+  letter-spacing: 0.05em;
+}
+.advantages li:last-child {
+  padding-left: 40px; 
+  margin-right: 0;
+}
+.advantages li h4 {
+  margin: 0 0 8px 0;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.56;
+  color: #141414;
+  color: var(--black-gray); 
+  letter-spacing: 0.05em;
+}
+.advantages li p {
+  margin: 0;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.56;
+  color: #141414;
+  color: var(--black-gray); 
+  letter-spacing: 0.05em;
+}
+
+.teachers {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1170px;
+  max-width: size("content-width");
+  margin-right: auto;
+  margin-bottom: 210px;
+  margin-left: auto;
+      flex-direction: column; 
+
+  -ms-flex-direction: column;
+}
+.teachers h2 {
+  font-family: "Gilroy";
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 1.4;
+  text-transform: uppercase; 
+  letter-spacing: 0.05em;
+}
+.teachers__list {
+  display: -ms-flexbox;
+  display: flex;
+      flex-direction: row; 
+
+  -ms-flex-direction: row;
+}
+.teachers img {
+  width: 360px;
+}
+
+.teacher {
+  margin-right: 30px;
+}
+.teacher img {
+  margin-bottom: 25px;
+}
+.teacher h4 {
+  margin: 0 0 6px 0;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.56;
+  color: #141414;
+  color: var(--black-gray); 
+  letter-spacing: 0.05em;
+}
+.teacher p {
+  margin: 0;
+  font-family: "Gilroy";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #141414;
+  color: var(--black-gray); 
+  letter-spacing: 0.05em;
+}
+
+.course h2 {
+  margin: 0 0 72px 0;
+  font-family: "Gilroy";
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 1.4;
+  text-transform: uppercase; 
+  letter-spacing: 0.05em;
+}
+
+.course__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1170px;
+  max-width: size("content-width");
+  margin-right: auto;
+  margin-left: auto;
+
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.course ul {
+  padding: 0;
+  list-style: none; 
+
+  -webkit-columns: 2;
+          columns: 2;
+  -webkit-column-gap: 3px;
+          column-gap: 3px;
+}
+.course ul li {
+  margin-right: 50px; 
+  margin-bottom: 28px;
+}
+.course ul h4 {
+  margin: 0 0 6px 0;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.6;
+  color: #141414;
+  color: var(--black-gray); 
+  letter-spacing: 0.05em;
+}
+.course ul p {
+  margin: 0;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #141414;
+  color: var(--black-gray); 
+  letter-spacing: 0.05em;
+}
+
+.price {
+  margin-bottom: 37px;
+}
+.price span {
+  display: block;
+  margin-bottom: 12px;
+  font-family: "Gilroy";
+  font-size: 45px;
+  font-weight: 300;
+  color: #f5112c;
+  color: var(--pinkish-red); 
+  letter-spacing: 0.05em;
+}
+.price p {
+  margin: 0;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.56;
+  color: #141414;
+  color: var(--black-gray); 
+  letter-spacing: 0.05em;
+}

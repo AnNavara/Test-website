@@ -1,0 +1,51 @@
+.advantages {
+  margin-bottom: 200px;
+
+  h2 {
+    margin-bottom: 132px;
+  }
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin-right: 28px;
+    padding-left: 26px;
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.56;
+    letter-spacing: 0.05em;
+
+    &:last-child {
+      margin-right: 0;
+      padding-left: 40px;
+    }
+
+    h4 {
+      margin: 0 0 8px 0;
+      font-family: "Gilroy";
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.56;
+      letter-spacing: 0.05em;
+      color: #141414;
+      color: var(--black-gray)
+    }
+
+    p {
+      margin: 0;
+      font-family: "Gilroy";
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.56;
+      letter-spacing: 0.05em;
+      color: #141414;
+      color: var(--black-gray)
+    }
+  }
+}

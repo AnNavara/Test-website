@@ -25,7 +25,7 @@ module.exports = (options) => () => {
       postcssFF,
       autoprefixer({ browsers: ['> 3% in RU', 'last 2 version', 'ie 11'], flexbox: 'no-2009'})
     ]),
-    // $.csscomb(),
+    $.csscomb(),
     // $.sourcemaps.write(),
     gulp.dest(options.dest)
   ).on('error', $.notify.onError());

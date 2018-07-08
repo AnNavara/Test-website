@@ -1,0 +1,135 @@
+
+.trouble {
+  margin: 0 0 380px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  li {
+    position: relative;
+    display: flex;
+    counter-increment: item;
+    justify-content: flex-end;
+
+    &:nth-child(even) {
+      padding-left: 0;
+      justify-content: flex-start;
+
+      &::before {
+        top: 26px;
+        left: 400px;
+      }
+
+      &::after {
+        top: 25px;
+        left: 460px;
+      }
+
+      p {
+        margin-top: 88px;
+      }
+    }
+
+    &:nth-child(1) {
+      margin-bottom: 81px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 21px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 40px;
+
+      img {
+        margin-top: -85px;
+      }
+    }
+
+    &:nth-child(4) {
+      img {
+        margin-top: -43px;
+      }
+    }
+
+    &:last-child {
+      .trouble__img-wrap::before,
+      .trouble__img-wrap::after {
+        display: none;
+      }
+
+      .last-counter {
+        position: absolute;
+        content: "0"counter(item);
+        font-family: "Gilroy";
+        top: 25px;
+        right: -190px;
+        font-size: 48px;
+        font-weight: 800;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    p {
+      margin-right: 32px;
+      margin-top: 103px;
+      font-family: "Gilroy";
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.56;
+      letter-spacing: 0.05em;
+      color: #1b1b1b;
+    }
+  }
+}
+
+.trouble__img-wrap {
+  position: relative;
+
+  &:nth-child(odd) {
+    margin-right: 45px;
+    margin-left: 0;
+
+    &::before {
+      top: 25px;
+      left: auto;
+      right: -30px;
+    }
+
+    &::after {
+      top: 26px;
+      left: auto;
+      right: -44px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "0"counter(item);
+    font-family: "Gilroy";
+    top: 50px;
+    left: -30px;
+    font-size: 48px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+
+  &::after {
+    position: absolute;
+    content: ".";
+    top: 51px;
+    left: 25px;
+    font-family: "Gilroy";
+    font-size: 48px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: var(--pinkish-red);
+  }
+}

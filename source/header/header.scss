@@ -44,6 +44,7 @@
 .phone-number {
   margin-right: 42px;
   @include info-text;
+  text-decoration: none;
 }
 
 .btn {
